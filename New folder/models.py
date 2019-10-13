@@ -8,6 +8,7 @@ class Student(models.Model):
    mail = models.CharField(max_length = 50)
    address = models.CharField(max_length = 50)
    phonenumber = models.IntegerField()
+   bgroup = models.CharField(max_length = 10)
 
    class Meta:
       db_table = "student_info"
